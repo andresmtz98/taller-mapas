@@ -1,27 +1,22 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-navigation';
+import Landing from './src';
+import { Colors } from 'react-native-paper';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <SafeAreaView style={styles.container} forceInset={{ top: 'always', bottom: 'always' }}>
+        <Landing />
+      </SafeAreaView>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
- container: {
-   ...StyleSheet.absoluteFillObject,
-   flex: 1,
- },
- map: {
-   ...StyleSheet.absoluteFillObject,
- },
+  container: {
+    flex: 1,
+    backgroundColor: Colors.blueGrey700,
+  },
 });
-
-export default () => (
-   <SafeAreaView style={styles.container}>
-     
-   </SafeAreaView>
-);

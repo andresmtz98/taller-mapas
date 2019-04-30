@@ -1,4 +1,39 @@
 {
-  "name": "tallerMapas",
-  "displayName": "tallerMapas"
+  "expo": {
+    "name": "taller-mapas",
+    "slug": "taller-mapas",
+    "privacy": "public",
+    "sdkVersion": "32.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.tallermapas",
+      "versionCode": 1,
+      "permissions": [],
+      "config": {
+        "googleMaps": {          
+          "apiKey": "AIzaSyDzJzZAw6ZHyIm8exNFvogGtEon8L-HOhU"
+        }
+      }
+    }
+  }
 }
