@@ -4,11 +4,15 @@ import MainScreen from './Main';
 
 export default createAppContainer(createStackNavigator(
   {
-    Main: MainScreen,
+    Main: {
+      screen: MainScreen,
+      navigationOptions: {
+        header: null,
+      },
+    },
   },
   {
-    initialRouteName: 'Main',
-    headerMode: 'none',
+    initialRouteName: 'Main',    
     mode: 'card',
     transparentCard: true,
     defaultNavigationOptions: {
