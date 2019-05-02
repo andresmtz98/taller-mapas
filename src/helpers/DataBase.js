@@ -6,7 +6,7 @@ export default class DataBase {
     }
 
     createTable = async () => {
-        this.db.executeSql("DROP TABLE IF EXISTS Sitios;")
+        // this.db.executeSql("DROP TABLE IF EXISTS Sitios;")
         this.db.executeSql(
             "CREATE TABLE IF NOT EXISTS Sitios ( \
                 sitio_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, \
