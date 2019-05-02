@@ -1,6 +1,8 @@
 import { Animated, Easing } from 'react-native';
 import { createAppContainer, createStackNavigator } from "react-navigation";
-import MainScreen from './Main';
+import MainScreen from './components/Main';
+import ListadoSitiosScreen from './components/ListadoSitios';
+import { Colors } from 'react-native-paper';
 
 export default createAppContainer(createStackNavigator(
   {
@@ -9,6 +11,13 @@ export default createAppContainer(createStackNavigator(
       navigationOptions: {
         header: null,
       },
+    },
+    Listado: {
+      screen: ListadoSitiosScreen,
+      navigationOptions: {
+        title: 'Listado',
+        headerPressColorAndroid: Colors.blue300,        
+      }
     },
   },
   {

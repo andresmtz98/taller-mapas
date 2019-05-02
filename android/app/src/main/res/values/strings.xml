@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Taller Mapas</string>
+    <string name="google_map_api_key">AIzaSyDzJzZAw6ZHyIm8exNFvogGtEon8L-HOhU</string>
+</resources>
